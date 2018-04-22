@@ -1,0 +1,212 @@
+<html><head>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+<style type="text/css">
+	
+	@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #e5eef9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    max-width: 600px;
+    height: 610px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px #dcdcdc;
+    margin-bottom: 25px;
+    margin-top: 20px;}
+
+.content a{font-style: none;text-decoration: none;}
+
+.navbar {
+  width: 100%;
+  height: 7.5%;
+  border-radius: 10px 10px 0 0;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+.navbar svg {
+  width: 17.5px;
+  height: 50%;
+  margin: 0 10px;
+  align-self: flex-end;
+}
+.navbar h1 {
+  font-size: 15px;
+  align-self: flex-end;
+  color: #43639d;
+  margin-bottom: 2.5px;
+}
+
+.content {
+    width: 100%;
+    flex-grow: 1;
+    padding: 30px 0 0;
+    padding-bottom: 30px;
+    overflow-y: scroll;
+}
+.content .card {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 12.5px;
+  border-radius: 5px;
+  padding: 15px 25px;
+  box-shadow: 0 10px 25px #dcdcdc;
+}
+.content .card--number {
+  letter-spacing: 3.77px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+.content .card--owner {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.content .card--info {
+  display: flex;
+}
+.content .card--info--amount {
+  margin-left: 10px;
+}
+.content .card--info--integral, .content .card--info--amount{
+  font-size: 11.5px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+}
+
+.card--info--comments{margin-left: 340px;}
+.card--info--comments a{color: #fff;}
+
+.content .type-0 {
+  background: linear-gradient(to right, #d194ff, #9389ff);
+}
+.content .type-1 {
+  background: linear-gradient(to right, #7cbfee, #00d0b8);
+}
+.content .type-2 {
+  background: linear-gradient(to right, #ff77a7, #ff7b7e);
+}
+
+
+
+.content .type-3 {
+  background: linear-gradient(to right, #d194ff, #9389ff);
+}
+.content .type-4 {
+  background: linear-gradient(to right, #7cbfee, #00d0b8);
+}
+.content .type-5 {
+  background: linear-gradient(to right, #ff77a7, #ff7b7e);
+}
+
+
+.content .type-6 {
+  background: linear-gradient(to right, #d194ff, #9389ff);
+}
+.content .type-7 {
+  background: linear-gradient(to right, #7cbfee, #00d0b8);
+}
+.content .type-8 {
+  background: linear-gradient(to right, #ff77a7, #ff7b7e);
+}
+
+
+.content .type-9 {
+  background: linear-gradient(to right, #d194ff, #9389ff);
+}
+.
+
+.link-author {
+  text-decoration: none;
+  font-size: 12.5px;
+}
+.link-author:link, .link-author:visited, .link-author:hover, .link-author:active {
+  color: #43639d;
+}
+
+.pagination {
+    display: inline-block;
+    margin:0 auto;
+    width: 90%;
+    padding: 10px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #ea4c88;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+
+</style>
+
+	<title></title>
+</head>
+<body>
+
+<div class="container">
+  <header class="navbar">
+    
+    <div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="/news/1">1</a>
+  <a href="/news/2" class="active">2</a>
+  <a href="/news/3">3</a>
+  <a href="/news/4">4</a>
+  <a href="/news/5">5</a>
+  <a href="/news/6">6</a>
+  <a href="/news/7">7</a>
+  <a href="/news/8">8</a>
+  <a href="/news/9">9</a>
+  <a href="/news/10">10</a>
+  <a href="#">&raquo;</a>
+</div>
+      
+  </header>
+  <article class="content">
+    
+   {{data | safe}}
+
+
+
+    
+  </article>
+</div>
+
+
+</body></html>
