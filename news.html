@@ -1,0 +1,156 @@
+<html><head>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+
+<style type="text/css">
+	
+	@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #e5eef9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 600px;
+    /* height: 510px; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px #dcdcdc;
+    margin-bottom: 25px;}
+
+.content a{font-style: none;text-decoration: none;}
+
+.navbar {
+  width: 100%;
+  height: 7.5%;
+  border-radius: 10px 10px 0 0;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+}
+.navbar svg {
+  width: 17.5px;
+  height: 50%;
+  margin: 0 10px;
+  align-self: flex-end;
+}
+.navbar h1 {
+  font-size: 15px;
+  align-self: flex-end;
+  color: #43639d;
+  margin-bottom: 2.5px;
+}
+
+.content {
+    width: 100%;
+    flex-grow: 1;
+    padding: 30px 0 0;
+    padding-bottom: 30px;
+    overflow-y: scroll;
+}
+.content .card {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 12.5px;
+  border-radius: 5px;
+  padding: 15px 25px;
+  box-shadow: 0 10px 25px #dcdcdc;
+}
+.content .card--number {
+  letter-spacing: 3.77px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-weight: 800;
+}
+.content .card--owner {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.content .card--info {
+  display: flex;
+}
+.content .card--info--amount {
+  margin-left: 10px;
+}
+.content .card--info--integral, .content .card--info--amount{
+  font-size: 11.5px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.25px;
+}
+
+.card--info--comments{margin-left: 340px;}
+.card--info--comments a{color: #fff;}
+
+.content .one {
+  background: linear-gradient(to right, #d194ff, #9389ff);
+}
+.content .two {
+  background: linear-gradient(to right, #7cbfee, #00d0b8);
+}
+.content .three {
+  background: linear-gradient(to right, #ff77a7, #ff7b7e);
+}
+
+.link-author {
+  text-decoration: none;
+  font-size: 12.5px;
+}
+.link-author:link, .link-author:visited, .link-author:hover, .link-author:active {
+  color: #43639d;
+}
+
+</style>
+
+	<title></title>
+</head>
+<body>
+
+<div class="container">
+  <header class="navbar">
+    
+    
+      
+  </header>
+  <article class="content">
+
+    <a href="#">
+    <div class="card one">
+      <p class="card--number">A Taxonomy of Technical Debt</p>
+      <p class="card--owner">googlesource.com</p>
+      <div class="card--info">
+        <p class="card--info--integral">25 <i class="fas fa-thumbs-up"></i></p>
+        <p class="card--info--comments"><a href="/comments/id">23 Comments</a></p>
+      </div>
+    </div> 
+    </a>
+
+
+
+    
+  </article>
+</div>
+
+
+</body></html>
